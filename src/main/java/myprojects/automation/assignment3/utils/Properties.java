@@ -31,9 +31,6 @@ public class Properties {
      */
     public static String getBrowser(String browser) {
         return System.getProperty(EnvironmentVariables.BROWSER.toString(), DEFAULT_BROWSER);
-
-
-
     }
 
 

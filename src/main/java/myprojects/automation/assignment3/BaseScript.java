@@ -1,12 +1,13 @@
 package myprojects.automation.assignment3;
 
+
 import myprojects.automation.assignment3.utils.EventHandler;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
@@ -56,7 +57,6 @@ public abstract class BaseScript {
         if (driver != null) {
             driver.manage().window().maximize();
             driver.manage().timeouts().setScriptTimeout( 20, TimeUnit.SECONDS);
-
             return  driver;
         }
         throw new UnsupportedOperationException("Method doesn't return configured WebDriver instance");
@@ -64,4 +64,3 @@ public abstract class BaseScript {
 }
 
 
-//http://developer.alexanderklimov.ru/android/java/switch.php
